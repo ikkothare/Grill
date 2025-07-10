@@ -1,0 +1,184 @@
+<div class="container my-4">
+  <div class="accordion" id="mainAccordion">
+
+    <!-- 🔽 Main Collapsible Card: Software Architecture -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingMain">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMain" aria-expanded="true" aria-controls="collapseMain">
+          Software Architecture
+        </button>
+      </h2>
+      <div id="collapseMain" class="accordion-collapse collapse show" aria-labelledby="headingMain" data-bs-parent="#mainAccordion">
+        <div class="accordion-body">
+
+          <!-- 🧠 Overview Text -->
+          <ul class="list-group list-group-flush mb-4">
+            <li class="list-group-item">It is a <strong>blueprint</strong> of the system.</li>
+            <li class="list-group-item">Includes <strong>communication</strong> between components.</li>
+            <li class="list-group-item">Includes <strong>performance, security, and operations</strong>.</li>
+          </ul>
+
+          <!-- 📚 Inner Accordion with Patterns -->
+          <div class="accordion" id="architectureAccordion">
+
+            <!-- Layered Pattern -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingLayered">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLayered" aria-expanded="true" aria-controls="collapseLayered">
+                  Layered Pattern
+                </button>
+              </h2>
+              <div id="collapseLayered" class="accordion-collapse collapse show" aria-labelledby="headingLayered" data-bs-parent="#architectureAccordion">
+                <div class="accordion-body">
+                  Provides service to its higher layer. <em>(e.g., E-commerce, Banking applications)</em>
+                  <div class="border rounded p-3 bg-light mt-2">
+                    <strong>Presentation (UI)</strong> → <strong>Application (Service)</strong> → <strong>Business Logic</strong> → <strong>Data Access Layer</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Client-Server Pattern -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingClientServer">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseClientServer" aria-expanded="false" aria-controls="collapseClientServer">
+                  Client-Server Pattern
+                </button>
+              </h2>
+              <div id="collapseClientServer" class="accordion-collapse collapse" aria-labelledby="headingClientServer" data-bs-parent="#architectureAccordion">
+                <div class="accordion-body">
+                  Server provides services to multiple clients. <em>(e.g., Email Service, Remote File Storage)</em>
+                </div>
+              </div>
+            </div>
+
+            <!-- Event-Driven Pattern -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingEvent">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEvent" aria-expanded="false" aria-controls="collapseEvent">
+                  Event-Driven Pattern
+                </button>
+              </h2>
+              <div id="collapseEvent" class="accordion-collapse collapse" aria-labelledby="headingEvent" data-bs-parent="#architectureAccordion">
+                <div class="accordion-body">
+                  Components communicate by emitting and handling events.
+                  <ul class="mt-2">
+                    <li>🔔 Pressing the bell (event publisher) doesn’t know who hears it.</li>
+                    <li>👂 People inside the house (event handlers) respond to it.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- MVC Pattern -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingMVC">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMVC" aria-expanded="false" aria-controls="collapseMVC">
+                  MVC Pattern
+                </button>
+              </h2>
+              <div id="collapseMVC" class="accordion-collapse collapse" aria-labelledby="headingMVC" data-bs-parent="#architectureAccordion">
+                <div class="accordion-body">
+                  <ul>
+                    <li><strong>Model</strong> – Contains data and core functionality.</li>
+                    <li><strong>View</strong> – Displays the information.</li>
+                    <li><strong>Controller</strong> – Handles user input.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Microservice Pattern -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingMicroservice">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMicroservice" aria-expanded="false" aria-controls="collapseMicroservice">
+                  Microservice Pattern
+                </button>
+              </h2>
+              <div id="collapseMicroservice" class="accordion-collapse collapse" aria-labelledby="headingMicroservice" data-bs-parent="#architectureAccordion">
+                <div class="accordion-body">
+                  A collection of small, loosely coupled, independently deployable services, enabling scalability and rapid development.
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- 📎 Source -->
+          <p class="text-muted mt-4">
+            Source: <a href="https://www.turing.com/blog/software-architecture-patterns-types" target="_blank">Turing Blog</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="container my-4">
+  <div class="accordion" id="designPatternAccordion">
+
+    <!-- 🔽 Main Collapsible Card: Design Patterns -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingDesignMain">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDesignMain" aria-expanded="true" aria-controls="collapseDesignMain">
+          Design Patterns
+        </button>
+      </h2>
+      <div id="collapseDesignMain" class="accordion-collapse collapse show" aria-labelledby="headingDesignMain" data-bs-parent="#designPatternAccordion">
+        <div class="accordion-body">
+
+          <!-- 📚 Inner Accordion for Categories and Singleton -->
+          <div class="accordion" id="innerDesignAccordion">
+
+            <!-- Design Pattern Categories -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingCategories">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCategories" aria-expanded="true" aria-controls="collapseCategories">
+                  Pattern Categories
+                </button>
+              </h2>
+              <div id="collapseCategories" class="accordion-collapse collapse show" aria-labelledby="headingCategories" data-bs-parent="#innerDesignAccordion">
+                <div class="accordion-body">
+                  <ul>
+                    <li><strong>Creational</strong> – Solution around object creation issues. <em>(e.g., Singleton, Factory)</em></li>
+                    <li><strong>Behavioral</strong> – Solution around object communication issues. <em>(e.g., Observer, Chain of Responsibility)</em></li>
+                    <li><strong>Structural</strong> – Solution around class structure and object composition.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Singleton Pattern -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSingleton">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSingleton" aria-expanded="false" aria-controls="collapseSingleton">
+                  Singleton Pattern
+                </button>
+              </h2>
+              <div id="collapseSingleton" class="accordion-collapse collapse" aria-labelledby="headingSingleton" data-bs-parent="#innerDesignAccordion">
+                <div class="accordion-body">
+                  <p><strong>Purpose:</strong> Ensures only one instance of a class is created and is globally accessible.</p>
+
+                  <p><strong>Must-haves:</strong></p>
+                  <ol>
+                    <li>Create a private constructor.</li>
+                    <li>Create a global instance and an object lock.</li>
+                    <li>Make the instance creation thread-safe using <code>lock</code>.</li>
+                    <li>Make the class <code>sealed</code> to prevent inheritance and avoid multiple instances in nested classes.</li>
+                    <li>Return the same object every time it's requested.</li>
+                  </ol>
+
+                  <p><strong>Use cases:</strong> Logging, Caching, Config Management, etc.</p>
+                </div>
+              </div>
+            </div>
+
+          </div> <!-- End Inner Accordion -->
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
