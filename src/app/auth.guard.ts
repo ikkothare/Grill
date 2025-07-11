@@ -1,3 +1,5 @@
+
+// This is newer pattern if you want to use it uncomment it and comment the next code.
 // import { CanActivateFn } from '@angular/router';
 
 // export const authGuard: CanActivateFn = (route, state) => {
@@ -18,7 +20,7 @@ export class AuthGuard implements CanActivate {
   canActivate(): boolean {
     const isLoggedIn = !!localStorage.getItem('token'); // example check
     if (!isLoggedIn) {
-      this.router.navigate(['/login']);
+      this.router.navigate(['/']);
       return false;
     }
     return true;
