@@ -8,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  constructor() {
+    localStorage.setItem('token', 'true');
+  }
+
+
 }
