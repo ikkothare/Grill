@@ -6,9 +6,10 @@ import { AzureComponent } from './azure/azure.component';
 import { SqlComponent } from './sql/sql.component';
 import { OtherComponent } from './other/other.component';
 import { AuthGuard } from './auth.guard';
+import { AdviceResolver } from './resolvers/advice.resolver';
 
 export const routes: Routes = [
-     { path:'', component:HomeComponent },
+     { path:'', component:HomeComponent, resolve: { advice: AdviceResolver} },
     { path:'csharp', component:CsharpComponent },
     { path:'angular', component:AngularComponent, canActivate:[AuthGuard] },
     { path:'azure', component:AzureComponent },
